@@ -5,6 +5,26 @@
 	Rockraider400
 ]]
 
+-- type definitions
+type Body = {
+	Position: Vector2,
+	Radius: number,
+	Mass: number,
+}
+type QuadNode = {
+	Center: Vector2,
+	SideLength: number,
+	IsLeaf: boolean,
+	Children: nil | { QuadNode },
+}
+type QuadTree = {
+	Center: Vector2,
+	SideLength: number,
+	MaxElementsPerLeaf: number,
+	RootNode: QuadNode,
+	MaxDepth: number,
+}
+
 -- quadtree implementation
 local Body
 do
@@ -38,12 +58,12 @@ do
 			(Quadrants will only exist as necessary to hold elements -- not all four will always be present).
 		]]
 
-		local self = { -- TODO_convert_quad_node_into_smaller_data_footprint
+		local self = {
 			Center = center,
 			SideLength = sideLength,
 
 			IsLeaf = true,
-			Elements = {}, --TODO_use_one_array_for_all_elements
+			Elements = {},
 			Children = nil, -- becomes an array when turned into a leaf
 		}
 		return setmetatable(self, QuadNode.Metatable)
