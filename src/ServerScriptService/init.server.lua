@@ -68,7 +68,7 @@ do
 		}
 		return setmetatable(self, QuadNode.Metatable)
 	end
-	function QuadNode:insert(body, maxElementsPerLeaf, depth, maxDepth)
+	function QuadNode:insert(body: Body, maxElementsPerLeaf: number, depth: number, maxDepth: number)
 		-- ignore bodies outside of our bounds
 		local body_x, body_y
 		do
@@ -270,7 +270,7 @@ do
 
 		return tostring(x) .. "_" .. tostring(y)
 	end
-	local function renderNodeRecursive(self, ParentNode)
+	local function renderNodeRecursive(self, ParentNode: QuadNode)
 		--[[
 			Post-order traversal for rendering each quad node in a quadtree		
 		]]
@@ -397,7 +397,7 @@ do
 	end
 
 	-- PUBLIC METHODS
-	function Server.new(ClearButton, QuadPlatform)
+	function Server.new(ClearButton: BasePart, QuadPlatform: BasePart)
 		--[[
 			Given template items from workspace, construct new Server singleton class
 		]]
@@ -445,7 +445,7 @@ do
 		end)
 
 		-- updates on frame
-		spawn(function()
+		task.spawn(function()
 			while true do
 				-- update quadtree render
 				frameUpdate(self)
@@ -453,7 +453,7 @@ do
 				-- self explanatory
 				updateButtonColor(self)
 
-				wait(SECONDS_PER_FRAME)
+				task.wait(SECONDS_PER_FRAME)
 			end
 		end)
 	end
@@ -509,5 +509,6 @@ do
 end
 
 -- initialize >:)
-local ServerInstance = Server.new(workspace.ClearButton, workspace.QuadPlatform)
+local PlatformModel = workspace.Platform
+local ServerInstance = Server.new(PlatformModel.ClearButton, PlatformModel.QuadPlatform)
 ServerInstance:initialize()
