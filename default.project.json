@@ -1,0 +1,22 @@
+{
+  "name": "quad-tree-rbx-demo",
+  "tree": {
+    "$className": "DataModel",
+
+    "ServerScriptService": {
+      "main": {
+        "$path": "src/ServerScriptService"
+      }
+    },
+
+    "Workspace": {
+      "$className": "Workspace",
+      "$properties": {
+        "FilteringEnabled": true
+      },
+      "$ignoreUnknownInstances": true,
+
+      "$path": "src/Workspace"
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "ClassName": "Model",
+  "Children": [
+    {
+      "ClassName": "Part",
+      "Name": "Baseplate1",
+      "Properties": {
+        "Anchored": {
+          "Type": "Bool",
+          "Value": true
+        },
+        "Size": {
+          "Type": "Vector3",
+          "Value": [128, 20, 128]
+        },
+        "Position": {
+          "Type": "Vector3",
+          "Value": [0, -10, 0]
+        },
+        "Color": {
+          "Type": "Color3",
+          "Value": [0.39, 0.37, 0.38]
+        },
+        "Locked": {
+          "Type": "Bool",
+          "Value": true
+        }
+      }
+    },
+    {
+      "ClassName": "Part",
+      "Name": "Baseplate2",
+      "Properties": {
+        "Anchored": {
+          "Type": "Bool",
+          "Value": true
+        },
+        "Size": {
+          "Type": "Vector3",
+          "Value": [104, 20, 104]
+        },
+        "Position": {
+          "Type": "Vector3",
+          "Value": [0, -30, 0]
+        },
+        "Color": {
+          "Type": "Color3",
+          "Value": [0.39, 0.37, 0.38]
+        },
+        "Locked": {
+          "Type": "Bool",
+          "Value": true
+        }
+      }
+    },
+    {
+      "ClassName": "Part",
+      "Name": "Baseplate3",
+      "Properties": {
+        "Anchored": {
+          "Type": "Bool",
+          "Value": true
+        },
+        "Size": {
+          "Type": "Vector3",
+          "Value": [64, 20, 64]
+        },
+        "Position": {
+          "Type": "Vector3",
+          "Value": [0, -50, 0]
+        },
+        "Color": {
+          "Type": "Color3",
+          "Value": [0.39, 0.37, 0.38]
+        },
+        "Locked": {
+          "Type": "Bool",
+          "Value": true
+        }
+      }
+    },
+    {
+      "ClassName": "Part",
+      "Name": "Baseplate4",
+      "Properties": {
+        "Anchored": {
+          "Type": "Bool",
+          "Value": true
+        },
+        "Size": {
+          "Type": "Vector3",
+          "Value": [32, 28, 32]
+        },
+        "Position": {
+          "Type": "Vector3",
+          "Value": [0, -74, 0]
+        },
+        "Color": {
+          "Type": "Color3",
+          "Value": [0.39, 0.37, 0.38]
+        },
+        "Locked": {
+          "Type": "Bool",
+          "Value": true
+        }
+      }
+    }
+  ]
+}

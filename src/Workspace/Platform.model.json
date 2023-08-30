@@ -1,0 +1,370 @@
+{
+  "ClassName": "Model",
+  "Children": [
+    {
+      "ClassName": "Part",
+      "Name": "QuadPlatform",
+      "Properties": {
+        "Size": {
+          "Type": "Vector3",
+          "Value": [64, 4, 64]
+        },
+        "Position": {
+          "Type": "Vector3",
+          "Value": [0, 2, 0]
+        },
+        "Color": {
+          "Type": "Color3",
+          "Value": [0.1058, 0.1647, 0.2078]
+        },
+        "TopSurface": {
+          "Type": "Enum",
+          "Value": 0
+        },
+        "Anchored": {
+          "Type": "Bool",
+          "Value": true
+        }
+      }
+    },
+    {
+      "ClassName": "Part",
+      "Name": "ClearButton",
+      "Properties": {
+        "Size": {
+          "Type": "Vector3",
+          "Value": [4, 4, 4]
+        },
+        "Position": {
+          "Type": "Vector3",
+          "Value": [0, 14, 0]
+        },
+        "Orientation": {
+          "Type": "Vector3",
+          "Value": [-30, -54.736, 35.264]
+        },
+        "Color": {
+          "Type": "Color3",
+          "Value": [1, 0, 0.749]
+        },
+        "Material": {
+          "Type": "Enum",
+          "Value": 272
+        },
+        "Transparency": {
+          "Type": "Float32",
+          "Value": 0.1
+        },
+        "Reflectance": {
+          "Type": "Float32",
+          "Value": 0.2
+        },
+        "Anchored": {
+          "Type": "Bool",
+          "Value": true
+        }
+      }
+    },
+
+    {
+      "ClassName": "Folder",
+      "Name": "SpawnLocations",
+      "Children": [
+        {
+          "ClassName": "SpawnLocation",
+          "Name": "Spawn1",
+          "Properties": {
+            "Color": {
+              "Type": "Color3",
+              "Value": [0.639, 0.635, 0.647]
+            },
+            "Size": {
+              "Type": "Vector3",
+              "Value": [12, 8, 12]
+            },
+            "Position": {
+              "Type": "Vector3",
+              "Value": [40, 3.5, -40]
+            },
+            "TopSurface": {
+              "Type": "Enum",
+              "Value": 0
+            },
+            "Anchored": {
+              "Type": "Bool",
+              "Value": true
+            }
+          },
+          "Children": [
+            {
+              "ClassName": "Decal",
+              "Name": "Decal",
+              "Properties": {
+                "Texture": {
+                  "Type": "Content",
+                  "Value": "rbxasset://textures/SpawnLocation.png"
+                },
+                "Face": {
+                  "Type": "Enum",
+                  "Value": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ClassName": "SpawnLocation",
+          "Name": "Spawn2",
+          "Properties": {
+            "Color": {
+              "Type": "Color3",
+              "Value": [0.639, 0.635, 0.647]
+            },
+            "Size": {
+              "Type": "Vector3",
+              "Value": [12, 8, 12]
+            },
+            "Position": {
+              "Type": "Vector3",
+              "Value": [40, 3.5, 40]
+            },
+            "TopSurface": {
+              "Type": "Enum",
+              "Value": 0
+            },
+            "Anchored": {
+              "Type": "Bool",
+              "Value": true
+            }
+          },
+          "Children": [
+            {
+              "ClassName": "Decal",
+              "Name": "Decal",
+              "Properties": {
+                "Texture": {
+                  "Type": "Content",
+                  "Value": "rbxasset://textures/SpawnLocation.png"
+                },
+                "Face": {
+                  "Type": "Enum",
+                  "Value": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ClassName": "SpawnLocation",
+          "Name": "Spawn3",
+          "Properties": {
+            "Color": {
+              "Type": "Color3",
+              "Value": [0.639, 0.635, 0.647]
+            },
+            "Size": {
+              "Type": "Vector3",
+              "Value": [12, 8, 12]
+            },
+            "Position": {
+              "Type": "Vector3",
+              "Value": [-40, 3.5, -40]
+            },
+            "TopSurface": {
+              "Type": "Enum",
+              "Value": 0
+            },
+            "Anchored": {
+              "Type": "Bool",
+              "Value": true
+            }
+          },
+          "Children": [
+            {
+              "ClassName": "Decal",
+              "Name": "Decal",
+              "Properties": {
+                "Texture": {
+                  "Type": "Content",
+                  "Value": "rbxasset://textures/SpawnLocation.png"
+                },
+                "Face": {
+                  "Type": "Enum",
+                  "Value": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ClassName": "SpawnLocation",
+          "Name": "Spawn4",
+          "Properties": {
+            "Color": {
+              "Type": "Color3",
+              "Value": [0.639, 0.635, 0.647]
+            },
+            "Size": {
+              "Type": "Vector3",
+              "Value": [12, 8, 12]
+            },
+            "Position": {
+              "Type": "Vector3",
+              "Value": [-40, 3.5, 40]
+            },
+            "TopSurface": {
+              "Type": "Enum",
+              "Value": 0
+            },
+            "Anchored": {
+              "Type": "Bool",
+              "Value": true
+            }
+          },
+          "Children": [
+            {
+              "ClassName": "Decal",
+              "Name": "Decal",
+              "Properties": {
+                "Texture": {
+                  "Type": "Content",
+                  "Value": "rbxasset://textures/SpawnLocation.png"
+                },
+                "Face": {
+                  "Type": "Enum",
+                  "Value": 1
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ClassName": "Folder",
+      "Name": "Wedges",
+      "Children": [
+        {
+          "ClassName": "WedgePart",
+          "Name": "Wedge1",
+          "Properties": {
+            "Size": {
+              "Type": "Vector3",
+              "Value": [64, 4, 16]
+            },
+            "Position": {
+              "Type": "Vector3",
+              "Value": [0, 2, 40]
+            },
+            "Orientation": {
+              "Type": "Vector3",
+              "Value": [0, -180, 0]
+            },
+            "Color": {
+              "Type": "Color3",
+              "Value": [0.1058, 0.1647, 0.2078]
+            },
+            "TopSurface": {
+              "Type": "Enum",
+              "Value": 0
+            },
+            "Anchored": {
+              "Type": "Bool",
+              "Value": true
+            }
+          }
+        },
+        {
+          "ClassName": "WedgePart",
+          "Name": "Wedge2",
+          "Properties": {
+            "Size": {
+              "Type": "Vector3",
+              "Value": [64, 4, 16]
+            },
+            "Position": {
+              "Type": "Vector3",
+              "Value": [40, 2, 0]
+            },
+            "Orientation": {
+              "Type": "Vector3",
+              "Value": [0, -90, 0]
+            },
+            "Color": {
+              "Type": "Color3",
+              "Value": [0.1058, 0.1647, 0.2078]
+            },
+            "TopSurface": {
+              "Type": "Enum",
+              "Value": 0
+            },
+            "Anchored": {
+              "Type": "Bool",
+              "Value": true
+            }
+          }
+        },
+        {
+          "ClassName": "WedgePart",
+          "Name": "Wedge3",
+          "Properties": {
+            "Size": {
+              "Type": "Vector3",
+              "Value": [64, 4, 16]
+            },
+            "Position": {
+              "Type": "Vector3",
+              "Value": [0, 2, -40]
+            },
+            "Orientation": {
+              "Type": "Vector3",
+              "Value": [0, 0, 0]
+            },
+            "Color": {
+              "Type": "Color3",
+              "Value": [0.1058, 0.1647, 0.2078]
+            },
+            "TopSurface": {
+              "Type": "Enum",
+              "Value": 0
+            },
+            "Anchored": {
+              "Type": "Bool",
+              "Value": true
+            }
+          }
+        },
+        {
+          "ClassName": "WedgePart",
+          "Name": "Wedge4",
+          "Properties": {
+            "Size": {
+              "Type": "Vector3",
+              "Value": [64, 4, 16]
+            },
+            "Position": {
+              "Type": "Vector3",
+              "Value": [-40, 2, 0]
+            },
+            "Orientation": {
+              "Type": "Vector3",
+              "Value": [0, 90, 0]
+            },
+            "Color": {
+              "Type": "Color3",
+              "Value": [0.1058, 0.1647, 0.2078]
+            },
+            "TopSurface": {
+              "Type": "Enum",
+              "Value": 0
+            },
+            "Anchored": {
+              "Type": "Bool",
+              "Value": true
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
