@@ -17,6 +17,18 @@
       "$ignoreUnknownInstances": true,
 
       "$path": "src/Workspace"
+    },
+
+    "StarterPack": {
+      "$className": "StarterPack",
+      "$ignoreUnknownInstances": true,
+      "$path": "src/StarterPack"
+    },
+
+    "ReplicatedStorage": {
+      "$className": "ReplicatedStorage",
+      "$ignoreUnknownInstances": true,
+      "$path": "src/ReplicatedStorage"
     }
   }
 }

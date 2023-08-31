@@ -1,0 +1,9 @@
+{
+    "className": "Tool",
+    "properties": {
+        "CanBeDropped": {
+            "Type": "Bool",
+            "Value": false
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "ClassName": "Part",
+    "Name": "Handle",
+    "Properties": {
+        "Reflectance": {
+            "Type": "Float32",
+            "Value": 0.5
+        },
+        "Color": {
+            "Type": "Color3",
+            "Value": [0.1058, 0.1647, 0.2078]
+        },
+        "Size": {
+            "Type": "Vector3",
+            "Value": [2, 2, 2]
+        },
+        "Shape": {
+            "Type": "Enum",
+            "Value": 0
+        }
+    }
+}
