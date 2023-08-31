@@ -14,7 +14,7 @@
       "$properties": {
         "FilteringEnabled": true
       },
-      "$ignoreUnknownInstances": true,
+      "$ignoreUnknownInstances": false,
 
       "$path": "src/Workspace"
     },
