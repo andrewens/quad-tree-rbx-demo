@@ -6,7 +6,7 @@ local RemoteEvents = ReplicatedStorage.RemoteEvents
 local Player = Players.LocalPlayer
 local Mouse = Player:GetMouse()
 local Tool = script.Parent
-local Handle = Tool.Handle
+local Handle = Tool:WaitForChild("Handle")
 
 -- CONSTANTS
 local BALL_SPEED = 0
