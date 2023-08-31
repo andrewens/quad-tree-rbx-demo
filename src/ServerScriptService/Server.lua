@@ -127,7 +127,7 @@ function Server:initialize(): nil
 		end
 	end)
 end
-function Server:newBall(position: Vector3, velocity: Vector3, color: Color3): BasePart
+function Server:newBall(position: Vector3, color: Color3): BasePart
 	--[[
         Create a new Ball RBX Instance and add it to the Server, to be put into the QuadTree
     ]]
@@ -148,9 +148,6 @@ function Server:newBall(position: Vector3, velocity: Vector3, color: Color3): Ba
 	-- parent & store
 	table.insert(self._Balls, Ball)
 	Ball.Parent = workspace
-
-	-- I AM SPEED
-	Ball.Velocity = velocity
 
 	return Ball
 end
