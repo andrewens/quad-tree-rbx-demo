@@ -1,21 +1,23 @@
--- DEPENDENCIES
+-- dependencies
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Players = game:GetService("Players")
 
 local RemoteEvents = ReplicatedStorage.RemoteEvents
 local Player = Players.LocalPlayer
-local Mouse = Player:GetMouse()
 local Tool = script.Parent
+
+local Mouse = Player:GetMouse()
 local Handle = Tool:WaitForChild("Handle")
 
--- CONSTANTS
-local BALL_SPEED = 0
+-- constant
+local BALL_SPEED = 0 -- it's set to 0 so you can drop balls on top of each other, but you can change it if you'd like :)
 local COLOR = BrickColor.Random()
 
--- INITIALIZE
+-- initialize
 local function throwBall()
 	--[[
-		Throws a ball toward player's 3d mouse position
+		Throws a ball toward player's 3d mouse position.
+		Balls are initialized on the server, so we fire a RemoteEvent to make a new ball.
 	]]
 
 	-- get character root part (return if nil)
