@@ -108,7 +108,8 @@ function Server:initialize(): nil
 
 	-- spawn balls when player uses tool
 	RemoteEvents.NewBall.OnServerEvent:Connect(function(Player, ...)
-		self:newBall(...)
+		local Ball = self:newBall(...)
+		Ball:SetNetworkOwner(Player) -- this makes the physics a lot smoother
 	end)
 
 	-- clear all balls on ClearButton touch
@@ -126,7 +127,7 @@ function Server:initialize(): nil
 		end
 	end)
 end
-function Server:newBall(position: Vector3, velocity: Vector3, color: Color3): nil
+function Server:newBall(position: Vector3, velocity: Vector3, color: Color3): BasePart
 	--[[
         Create a new Ball RBX Instance and add it to the Server, to be put into the QuadTree
     ]]
@@ -150,6 +151,8 @@ function Server:newBall(position: Vector3, velocity: Vector3, color: Color3): ni
 
 	-- I AM SPEED
 	Ball.Velocity = velocity
+
+	return Ball
 end
 function Server:clearBalls(): boolean
 	--[[
