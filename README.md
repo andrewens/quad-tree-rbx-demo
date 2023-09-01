@@ -1,5 +1,5 @@
 # quad-tree-rbx-demo
-Interact with a quadtree data structure in a ROBLOX experience. Quadtrees are used for optimized spatial queries of points. I developed this to make a Barnes-Hut gravity simulation as research for my new game, Ship Crew RPG.
+Interact with a quadtree data structure in a ROBLOX experience. Quadtrees are used for optimized spatial queries of points. I developed this to make a [Barnes-Hut gravity simulation](https://andrewens.dev/2022/10/26/quad-tree.html) as research for my new game, [Ship Crew RPG.](https://andrewens.dev/2023/06/29/ship-crew-rpg.html)
 
 ## Edit with [Rojo:](https://github.com/rojo-rbx/rojo)
 
